@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clear interval</title>
+    <style>
+     #hello{
+        width:160px;
+            height: 160px;
+            background-color: aqua;
+     }
+    </style>
+</head>
+<body>
+    <div id ="hello">
+
+    </div>
+    <script>
+    //       setInterval(showtime,1000)
+    //         function showtime(){
+    //     //    var div = document.getElementById("hello")
+    //     //    div.innerHTML= "<h3>hello world</h3>"
+    //     alert("hello");
+    // }
+
+
+
+let x =10;
+var a =setInterval(change,1000)
+ function change(){
+    if(x==100){
+        clearInterval(a)
+    }
+        else{
+
+            x=x+10; 
+            var div = document.getElementById("hello")
+            div.style.marginTop=x+"px"
+            div.innerHTML = Date()
+        }
+ }
+        
+        
+    </script>
+</body>
+</html>
